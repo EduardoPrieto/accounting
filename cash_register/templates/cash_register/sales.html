@@ -1,0 +1,3 @@
+{% for item in sales %}
+{{item.price}} {{item.date}}<!-- <a href="{% url 'delete' item.id %}" >Eliminar</a> -->
+{% endfor%}

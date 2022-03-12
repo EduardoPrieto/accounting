@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %} {% block content %}
+<br>
+<br>
+
+ Tu compañia se llama  {{company}} 
+
+<br><br>
+<a href="{% url 'new_expense'  %}" >Añadir gasto</a>
+<br>
+<a href="{% url 'expenses' company.id %}" >ver gastos</a>
+<br>
+<a href="{% url 'new_sale'  %}" >Añadir venta</a>
+<br>
+<a href="{% url 'sales' company.id %}" >ver ventas</a>
+<br>
+{% endblock %}
